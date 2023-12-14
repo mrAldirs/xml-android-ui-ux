@@ -15,5 +15,9 @@ class FormActivity : AppCompatActivity() {
 
         binding.inpName.text = intent.getStringExtra("name")
         binding.inpId.text = intent.getStringExtra("id")
+
+        binding.btnSubmit.setOnClickListener {
+            AlertSuccess().show(supportFragmentManager, "AlertSuccess")
+        }
     }
 }
