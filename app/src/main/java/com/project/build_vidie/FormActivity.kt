@@ -12,5 +12,8 @@ class FormActivity : AppCompatActivity() {
         binding = ActivityFormBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.hide()
+
+        binding.inpName.text = intent.getStringExtra("name")
+        binding.inpId.text = intent.getStringExtra("id")
     }
 }

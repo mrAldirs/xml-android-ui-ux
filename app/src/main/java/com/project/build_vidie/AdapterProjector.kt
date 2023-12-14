@@ -44,13 +44,16 @@ class AdapterProjector (private var dataList: List<DataItem>):
         }
 
         holder.pinjam.setOnClickListener {
-            holder.itemView.context.startActivity(Intent(holder.itemView.context, FormActivity::class.java))
+            val intent = Intent(holder.itemView.context, FormActivity::class.java)
+            intent.putExtra("id", data.id)
+            intent.putExtra("name", data.name)
+            holder.itemView.context.startActivity(intent)
         }
 
         holder.dipinjam.setOnClickListener {
             AlertDialog.Builder(holder.itemView.context).apply {
                 setTitle("Warning")
-                setMessage("Projector ${data.name} has been borrowed!")
+                setMessage("${data.name} has been borrowed!")
                 setPositiveButton("Ya") { _, _ -> null }
             }.show()
         }

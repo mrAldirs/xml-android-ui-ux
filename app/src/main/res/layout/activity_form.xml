@@ -62,17 +62,14 @@
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
-            <TextView
+            <EditText
                     android:id="@+id/inp_pj"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:gravity="center_vertical"
+                    android:layout_height="54dp"
+                    android:background="@drawable/rounded_edittext2"
                     android:layout_marginTop="8dp"
-                    android:paddingHorizontal="16dp"
-                    android:maxLines="1"
-                    android:textColor="@color/black"
-                    android:background="@drawable/rounded_textview"
-                    android:textSize="16sp"/>
+                    android:textSize="14sp"
+                    android:paddingHorizontal="8dp"/>
 
             <TextView
                     android:layout_width="wrap_content"
@@ -83,17 +80,14 @@
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
-            <TextView
+            <EditText
                     android:id="@+id/inp_kelas"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:gravity="center_vertical"
+                    android:layout_height="54dp"
                     android:layout_marginTop="8dp"
-                    android:paddingHorizontal="16dp"
-                    android:maxLines="1"
-                    android:textColor="@color/black"
-                    android:background="@drawable/rounded_textview"
-                    android:textSize="16sp"/>
+                    android:background="@drawable/rounded_edittext2"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="8dp"/>
 
             <TextView
                     android:layout_width="wrap_content"
@@ -104,17 +98,14 @@
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
-            <TextView
+            <EditText
                     android:id="@+id/inp_tgl"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:gravity="center_vertical"
+                    android:layout_height="54dp"
                     android:layout_marginTop="8dp"
-                    android:paddingHorizontal="16dp"
-                    android:maxLines="1"
-                    android:textColor="@color/black"
-                    android:background="@drawable/rounded_textview"
-                    android:textSize="16sp"/>
+                    android:background="@drawable/rounded_edittext2"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="8dp"/>
 
             <TextView
                     android:layout_width="wrap_content"
@@ -125,17 +116,14 @@
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
-            <TextView
+            <EditText
                     android:id="@+id/inp_waktu"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:gravity="center_vertical"
+                    android:layout_height="54dp"
                     android:layout_marginTop="8dp"
-                    android:paddingHorizontal="16dp"
-                    android:maxLines="1"
-                    android:textColor="@color/black"
-                    android:background="@drawable/rounded_textview"
-                    android:textSize="16sp"/>
+                    android:background="@drawable/rounded_edittext2"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="8dp"/>
 
             <Button
                     android:id="@+id/btn_submit"
