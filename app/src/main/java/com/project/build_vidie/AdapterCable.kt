@@ -1,5 +1,6 @@
 package com.project.build_vidie
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -43,6 +44,7 @@ class AdapterCable (private var dataList: List<DataItem>):
         }
 
         holder.pinjam.setOnClickListener {
+            holder.itemView.context.startActivity(Intent(holder.itemView.context, FormActivity::class.java))
         }
 
         holder.dipinjam.setOnClickListener {
