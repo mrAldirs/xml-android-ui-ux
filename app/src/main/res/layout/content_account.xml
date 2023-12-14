@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+            android:id="@+id/header_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@id/ic_tone">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HELLO,"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengguna Sistem Informasi"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08123456789"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/content_1"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:cardCornerRadius="24dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_below="@+id/ic_tone"
+            app:cardElevation="16dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="48dp"
+                android:paddingHorizontal="12dp"
+                android:background="@color/white">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="xxxxxxxx"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:paddingHorizontal="16dp"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_textview"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIM"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tv_nim"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="xxxxxxxx"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:paddingHorizontal="16dp"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_textview"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tv_kelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="xxxxxxxx"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:paddingHorizontal="16dp"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounded_textview"
+                    android:textSize="16sp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+            android:id="@+id/ic_tone"
+            android:layout_width="108dp"
+            android:layout_height="116dp"
+            android:src="@drawable/ic_tone"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignEnd="@id/content_1"/>
+
+</RelativeLayout>
