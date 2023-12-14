@@ -1,5 +1,6 @@
 package com.project.build_vidie
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.project.build_vidie.databinding.ActivityItemsBinding
@@ -13,7 +14,11 @@ class ItemsActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        binding.btnProjector.setOnClickListener {}
-        binding.btnCable.setOnClickListener {}
+        binding.btnProjector.setOnClickListener {
+            startActivity(Intent(this, ProjectorActivity::class.java))
+        }
+        binding.btnCable.setOnClickListener {
+            startActivity(Intent(this, CableActivity::class.java))
+        }
     }
 }

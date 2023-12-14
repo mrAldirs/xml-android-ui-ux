@@ -32,6 +32,10 @@
                   android:screenOrientation="portrait"/>
         <activity android:name=".ItemsActivity"
                   android:screenOrientation="portrait"/>
+        <activity android:name=".ProjectorActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".CableActivity"
+                  android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

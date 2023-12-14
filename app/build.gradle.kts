@@ -50,4 +50,5 @@ dependencies {
 
     // material design
     implementation("com.google.android.material:material:1.12.0-alpha02")
+    implementation("com.squareup.picasso:picasso:2.71828")
 }
